@@ -1,8 +1,8 @@
 # Copyright (C) 2021 antpb
-# This file is distributed under the same license as the Chatwoot Plugin package.
+# This file is distributed under the same license as the Supporthub Plugin package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chatwoot Plugin 0.2.0\n"
+"Project-Id-Version: Supporthub Plugin 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-plugin\n"
 "POT-Creation-Date: 2021-09-08 09:15:57+00:00\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 "X-Generator: grunt-wp-i18n 1.0.3\n"
 
 #. Plugin Name of the plugin/theme
-msgid "Chatwoot Plugin"
+msgid "SupportHub Plugin"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
@@ -34,8 +34,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Chatwoot Plugin for WordPress. This plugin helps you to quickly integrate "
-"Chatwoot live-chat widget on Wordpress websites."
+"SupportHub Plugin for WordPress. This plugin helps you to quickly integrate "
+"SupportHub live-chat widget on Wordpress websites."
 msgstr ""
 
 #. Author of the plugin/theme

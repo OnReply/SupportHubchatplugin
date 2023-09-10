@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name:     Chatwoot Plugin
- * Plugin URI:      https://www.chatwoot.com/
- * Description:     Chatwoot Plugin for WordPress. This plugin helps you to quickly integrate Chatwoot live-chat widget on Wordpress websites.
+ * Plugin Name:     SupportHub Plugin
+ * Plugin URI:      https://hub.supportsquad.nl/
+ * Description:     SupportHub Plugin for WordPress. This plugin helps you to quickly integrate SupportHub live-chat widget on Wordpress websites.
  * Author:          antpb
- * Author URI:      chatwoot.com
- * Text Domain:     chatwoot-plugin
+ * Author URI:      supportsquad.nl
+ * Text Domain:     supportsquad-plugin
  * Version:         0.2.0
  *
  * @package         chatwoot-plugin
@@ -13,7 +13,7 @@
 
 add_action('admin_enqueue_scripts', 'admin_styles');
 /**
- * Load Chatwoot Admin CSS.
+ * Load Supporthub Admin CSS.
  *
  * @since 0.1.0
  *
@@ -25,7 +25,7 @@ function admin_styles() {
 
  add_action( 'wp_enqueue_scripts', 'chatwoot_assets' );
 /**
- * Load Chatwoot Assets.
+ * Load Supporthub Assets.
  *
  * @since 0.1.0
  *
@@ -71,7 +71,7 @@ add_action('admin_menu', 'chatwoot_setup_menu');
  * @return {void}.
  */
 function chatwoot_setup_menu(){
-    add_options_page('Option', 'Chatwoot Settings', 'manage_options', 'chatwoot-plugin-options', 'chatwoot_options_page');
+    add_options_page('Option', 'SupportHub Settings', 'manage_options', 'chatwoot-plugin-options', 'chatwoot_options_page');
 }
 
 add_action( 'admin_init', 'chatwoot_register_settings' );
@@ -108,11 +108,11 @@ function chatwoot_register_settings() {
 function chatwoot_options_page() {
   ?>
   <div>
-    <h2>Chatwoot Settings</h2>
+    <h2>SupportHub Settings</h2>
     <form method="post" action="options.php" class="chatwoot--form">
       <?php settings_fields('chatwoot-plugin-options'); ?>
       <div class="form--input">
-        <label for="chatwootSiteToken">Chatwoot Website Token</label>
+        <label for="chatwootSiteToken">SupportHub Website Token</label>
         <input
           type="text"
           name="chatwootSiteToken"
@@ -120,7 +120,7 @@ function chatwoot_options_page() {
         />
       </div>
       <div class="form--input">
-        <label for="chatwootSiteURL">Chatwoot Installation URL</label>
+        <label for="chatwootSiteURL">SupportHub Installation URL</label>
         <input
           type="text"
           name="chatwootSiteURL"
